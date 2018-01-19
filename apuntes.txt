@@ -1,0 +1,20 @@
+array con los distintos lugares de stucom
+
+//Funciones
+-pokeparada otorga premio
+-usuario se desplaza
+-subir de nivel usuario
+-capturar pokemon (calculos)
+-pokemon y usuario en mismo lugar
+-num aleatorio
+-subir de nivel pokemon
+-utilizar poción
+-liberar pokemon
+-orden pokemon batalla
+-batalla
+-ataque calculo
+-rewards de batalla
+-pokemon se desplaza
+-ranking de usuarios con más pokemon
+-ranking de pokemon segun batallas ganadas
+//
