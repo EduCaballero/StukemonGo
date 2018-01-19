@@ -14,15 +14,15 @@ public class User {
 	
 	//CONSTRUCTORES
 	//TODO dar valores por defecto necesarios
-	public User(String userName, String password, int pokeballs, int potions, int level, String place, int pokeCoins, int points) {
+	public User(String userName, String password, String place) {
 		this.userName=userName;
 		this.password=password;
-		this.pokeballs=pokeballs;
-		this.potions=potions;
-		this.level=level;
+		this.pokeballs=20;
+		this.potions=0;
+		this.level=0;
 		this.place=place;
-		this.pokeCoins=pokeCoins;
-		this.potions=potions;
+		this.pokeCoins=0;
+		this.points=0;
 	}
 		
 	
@@ -91,5 +91,13 @@ public class User {
 		this.points = points;
 	}
 	///////////////////////////////////////////////
+	//FUNCIONES
+	
+	
+	//curar pokemon
+	
+	//moverse por stucom
+	
+	//subir de nivel
 
 }

@@ -1,0 +1,6 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="pokemon.handlers.MainHandler"
+		  stylesheets="@/pokemon/resources/stylesheets/global.css" id="root">
+	<StackPane fx:id="app"/>
+</GridPane>

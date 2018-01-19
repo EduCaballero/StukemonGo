@@ -1,0 +1,12 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+		  fx:controller="pokemon.handlers.CreatePlayerHandler" styleClass="grid-pane">
+	<TextField fx:id="nameTextField" onAction="#storePlayer" promptText="Nombre" prefWidth="414" GridPane.rowIndex="0"/>
+	<HBox alignment="BOTTOM_RIGHT" GridPane.rowIndex="1" styleClass="h-box">
+		<Button cancelButton="true" onAction="#back" text="Cancelar"/>
+		<Button onAction="#storePlayer" text="Crear"/>
+	</HBox>
+</GridPane>

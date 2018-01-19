@@ -5,7 +5,7 @@ import java.sql.Date;
 public class Pokedex {
 	
 	//ATRIBUTOS
-	int idPokedex;
+	int idPokedex; //id del pokemon que incorporamos
 	String user;
 	String pokemon;
 	Date date;
@@ -88,5 +88,9 @@ public class Pokedex {
 	public void setLifeCurrent(int lifeCurrent) {
 		this.lifeCurrent = lifeCurrent;
 	}	
+	
+	//FUNCIONES
+	
+	//capturar pokemon
 
 }

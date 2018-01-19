@@ -5,7 +5,7 @@ public class Pokemon {
 	//ATRIBUTOS
 	String name;
 	String type;
-	int pc;
+	int pc;//puntos de combate
 	int life;
 	String place;
 	
@@ -62,6 +62,10 @@ public class Pokemon {
 
 	public void setPlace(String place) {
 		this.place = place;
-	}	
+	}
+	
+	//FUNCIONES
+	
+	//desplazarse por stucom
 
 }

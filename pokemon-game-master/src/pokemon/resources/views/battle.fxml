@@ -1,0 +1,32 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+		  fx:controller="pokemon.handlers.BattleHandler"
+		  styleClass="grid-pane">
+	<HBox styleClass="h-box" GridPane.rowIndex="0" GridPane.columnIndex="1">
+		<ImageView fx:id="enemyImageImageView" fitWidth="180" preserveRatio="true"/>
+		<VBox styleClass="v-box">
+			<Label fx:id="enemyNameLabel" styleClass="heading--2"/>
+			<Label fx:id="enemyLevelLabel"/>
+			<Label fx:id="enemyHpLabel"/>
+		</VBox>
+	</HBox>
+	<HBox styleClass="h-box" GridPane.rowIndex="1" GridPane.columnIndex="0">
+		<ImageView fx:id="imageImageView" fitWidth="180" preserveRatio="true"/>
+		<VBox styleClass="v-box">
+			<Label fx:id="nameLabel" styleClass="heading--2"/>
+			<Label fx:id="levelLabel"/>
+			<Label fx:id="hpLabel"/>
+		</VBox>
+		<GridPane styleClass="grid-pane">
+			<Button fx:id="attack1Button" styleClass="button--black" prefWidth="256" onAction="#attack1"
+					GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+			<Button fx:id="attack2Button" styleClass="button--black" prefWidth="256" onAction="#attack2"
+					GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+			<Button fx:id="attack3Button" styleClass="button--black" prefWidth="256" onAction="#attack3"
+					GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+			<Button text="Abandonar" prefWidth="256" onAction="#abort" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+		</GridPane>
+	</HBox>
+</GridPane>

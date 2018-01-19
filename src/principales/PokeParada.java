@@ -31,9 +31,9 @@ public class PokeParada {
 		return place;
 	}
 
-	public void setPlace(String place) {
+	/*public void setPlace(String place) { //NO se puede modificar una pokeparada de lugar
 		this.place = place;
-	}
+	}*/
 
 	//pokeballs
 	public int getPokeballs() {
@@ -52,5 +52,9 @@ public class PokeParada {
 	public void setPotions(int potions) {
 		this.potions = potions;
 	}
+	
+	//FUNCIONES
+	
+	//otorgar premios (pokeballs y potions)
 
 }

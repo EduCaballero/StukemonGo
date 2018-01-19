@@ -1,0 +1,31 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+		  fx:controller="pokemon.handlers.GameHandler"
+		  styleClass="grid-pane">
+	<Label fx:id="playerLabel" styleClass="heading" GridPane.rowIndex="0"/>
+	<HBox alignment="TOP_LEFT" styleClass="h-box" GridPane.rowIndex="1">
+		<ImageView fx:id="imageImageView" fitWidth="180" preserveRatio="true"/>
+		<VBox styleClass="v-box">
+			<Label fx:id="pokemonLabel" styleClass="heading--2"/>
+			<Label fx:id="levelLabel"/>
+			<Label fx:id="expLabel"/>
+			<Label fx:id="hpLabel"/>
+			<Label fx:id="hungerLabel"/>
+		</VBox>
+	</HBox>
+	<VBox alignment="CENTER" styleClass="v-box" GridPane.rowIndex="2">
+		<Button fx:id="btn1" text="Recorrer el mapa" prefWidth="320" onAction="#onBattle"/>
+		<Button fx:id="btn2" text="Descansar" prefWidth="320" onAction="#onSleep"/>
+		<Label text="alimentos"/>
+		<VBox styleClass="v-box" alignment="CENTER">
+			<Button fx:id="btn3" text="Comida chatarra&#10;(hambre -30) (daño +5)" prefWidth="320"
+					onAction="#onFastFood"/>
+			<Button fx:id="btn4" text="Comida saludable&#10;(hambre -20) (hp +10)" prefWidth="320"
+					onAction="#onHealthyFood"/>
+			<Button fx:id="btn5" text="Snack&#10;(hambre -10) (hp +5)" prefWidth="320" onAction="#onSnack"/>
+		</VBox>
+	</VBox>
+	<Button onAction="#onExit" text="Salir" GridPane.rowIndex="3"/>
+</GridPane>
